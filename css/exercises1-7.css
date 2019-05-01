@@ -3,3 +3,42 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+body{
+	width: 960px;
+	margin: 0 auto;
+}
+li{
+	list-style: none;
+	padding: 20px 0 20px 20px;
+}
+.list{
+	padding-top: 50px;
+}
+.list-item1{
+	background-color: #EEE;
+}
+.boxes{
+	padding: 50px 0 50px;
+}
+/*サイズをまとめて指定する方法があるに違いない。。。*/
+.orange{
+	background-color: #ff8000;
+}
+.yellow{
+	background-color: #FFE011;
+}
+/*これは偶数番目を選択するべきなんだろうなnthで*/
+.box-1,.box-2,.box-4,
+.box-5,.box-7,
+.box-8{
+		height: 200px;
+		width: 30%;
+		margin: 0 5% 40px 0;
+		float: left;
+}
+.box-3,.box-6,.box-9{
+		height: 200px;
+		width: 30%;
+		margin: 0 auto;
+		float: left;
+}
