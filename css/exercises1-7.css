@@ -14,7 +14,7 @@ li{
 .list{
 	padding-top: 50px;
 }
-.list-item1{
+.list-item:nth-child(odd){
 	background-color: #EEE;
 }
 .clearfix::after{
