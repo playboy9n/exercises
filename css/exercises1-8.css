@@ -1,0 +1,55 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.clearfix::after{
+	content: ””;
+	display: block;
+	clear: both;
+}
+main{
+	width: 960px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+.contents-box {
+	width:300px;
+	margin: 10px;
+	border: 1px solid #e4e4e4;
+	float: left;
+	position: relative;
+}
+.img{
+	height: 150px;
+	width: 280px;
+	background-size: cover;
+	background-position: bottom;
+	margin: 10px;
+}
+
+.image1{
+	background-image: url(../img1-8/flow01.png);
+}
+.image2{
+	background-image: url(../img1-8/flow02.png);
+}
+.image3 {
+	background-image : url(../img1-8/flow03.png);
+}
+.logo{
+	float:left;
+	background-color: #ff994e;
+	color: #fff;
+	padding: 2px ;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+h2 {
+	padding: 10px;
+}
+p {
+	padding: 0 10px 10px;
+}
