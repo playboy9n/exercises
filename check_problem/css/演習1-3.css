@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.container {
+	width: 100%;
+}
+header {
+	height: 50px;
+	background-color: orangered;
+}
+.visual{
+	height: 500px;
+	background-color: orange;
+}
+.boxs{
+	width: 960px;
+	margin :0 auto;
+}
+
+.box:nth-child(even) {
+	width: 500px;
+	background-color: coral;
+	height: 800px;
+	float:left;
+}
+.box:nth-child(odd) {
+	width: 230px;
+	background-color: lightsalmon;
+	float: left;
+	height: 800px;
+}
+footer {
+	background-color: tomato;
+	height: 100px;
+}

@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+section {
+	padding: 50px 15px ;
+}
+h1 {
+	font-size: 30px;
+	padding-bottom: 30px;
+	color: lightsalmon;
+}
+h2 {
+	padding-top: 15px;
+}
+p,a {
+	padding:15px 0;
+}
+a:hover {
+	color: lightsalmon;
+}
