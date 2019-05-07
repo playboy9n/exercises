@@ -11,28 +11,20 @@
 a {
 	text-decoration: none;
 }
-li {
+ li {
 	list-style: none;
 }
 h2 {
-	position: absolute;
-	left: 0;
-	right: 0;
 	margin: auto;
 	font-size: 32px;
 	color: #000000;
+	padding: 90px 0 8px;
+	text-align:center;
 }
-h2:before {
-	content: '';
-	position: absolute;
-	left: 50%;
-	bottom: -8px;
-	display: inline-block;
+.border {
+	border-bottom: 3px solid #EC715F;
 	width: 70px;
-	height: 3px;
-	-webkit-transform: translateX(-50%);
-	background-color: #EC715F;
-
+	margin:0 auto;
 }
 header {
 	background-color: #EC715F;
@@ -50,17 +42,13 @@ header img{
 header ul {
 	float: right;
 }
-header li{
+header li {
 	float: left;
+	padding: 0 30px;
+	line-height: 70px;
 }
 header a{
-	padding-right: 30px;
-	line-height: 70px;
 	color: #FAFAFA;
-}
-header p {
-	top:0;
-	bottom:0;
 }
 section {
 	background-image: url(../img1-10/mv.png);
@@ -86,13 +74,14 @@ section p {
 	background-size: cover;
 	width: 920px;
 	margin: 0 auto;
-	height: 1000px;
+	height: 880px;
 }
 .portfolio p {
 	padding: 30px 0;
-}
-.portfolio h2,p {
 	text-align: center;
+}
+.portforios {
+	padding-bottom: 90px;
 }
 .img-item {
 	height: 250px;
@@ -100,10 +89,10 @@ section p {
 	float: left;
 	background-size: cover;
 	background-position: center;
-	margin: 5px 5px;
+	margin: 0 10px 0 0;
 }
 .img-item:nth-child(3n) {
-	margin: 5px 0;
+	margin: 0 0 10px 0;
 }
 .po-img1 {
 	background-image: url(../img1-10/sketch.jpg);
@@ -129,42 +118,47 @@ section p {
 	height: 700px;
 	position: relative;
 }
-.feature h2 {
-	margin-bottom: 30px ;
-	text-align: center;
-}
 .feature .feature-top {
 	padding: 30px 0;
+	text-align: center;
 }
 .content {
 	float: left;
 	display: inline-block;
 	padding: 10px 0;
+	overflow: hidden;
 	height: auto;
+	margin-bottom: 90px;
+	width: 320px;
 }
 .content h3 {
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 80px;
+	padding: 10px 0;
 }
 .content .feature-txt {
 	font-size: 16px;
 	color:#000000;
-	padding-right: 5px;
+	padding: 0 10px;
+	text-align: left;
+}
+.content .feature-txt:nth-child(3n) {
+	padding-right: 0;
 }
 .fas {
 	position: absolute;
 }
 .fa-money-bill-wave {
-	top: 130px;
+	top: 310px;
 	left: 130px;
 }
 .fa-child {
-	top: 130px;
+	top: 310px;
 	left: 470px;
 	font-weight: solid;
 	}
 .fa-smoking {
-	top: 130px;
+	top: 310px;
 	right: 140px;
 }
 .prof-box {
@@ -173,18 +167,26 @@ section p {
 .profile {
 	width: 1024px;
 	margin: 0 auto;
-	height: 1000px;
+	overflow: hidden;
+	height: auto;
+}
+.prof-top {
+	text-align: center;
+	padding:30px 0;
 }
 .prof-item {
 	width: 512px;
 	float: left;
 }
 .prof-box h2 {
-	margin-bottom: 30px;
-	text-align: center;
+	padding-top: 60px;
 }
 .prof-box h3 {
 	font-size: 20px;
+	padding-bottom: 5px;
+}
+.prof-box p {
+	padding-bottom: 20px;
 }
 .gentle {
 	height: 250px;
@@ -193,20 +195,56 @@ section p {
 	background-size: cover;
 	background-position: center;
 	border-radius: 50%;
+	margin: 0 auto;
+	margin-bottom: 90px;
 }
 
 .contact {
 	width: 800px;
 	margin: 0 auto;
-	height: 1000px;
+	height: auto;
+	position: relative;
 }
-.contact h2{
-	margin-bottom: 30px;
-	text-align: center;
+.contact .mee-item {
+	padding: 30px 0 90px;
+	width: 400px;
+	margin-left: 120px;
 }
+.contact p {
+	padding: 30px;
+	text-align:center;
+}
+.contact ul {
+	float:right;
+}
+.contact li {
+	float:left;
+}
+.fa-gift {
+	position: absolute;
+	bottom: 140px;
+	right: 147px;
+}
+.fa-twitter {
+	position: absolute;
+	bottom: 138px;
+	right: 70px;
+}
+.fa-instagram {
+	position: absolute;
+	bottom: 138px;
+	right: 0;
+}
+.contact-logo {
+	position: absolute;
+	bottom: 190px;
+	right: 160px;
+}
+
 footer {
 	background-color: #EC715F;
 	height: 60px;
+	text-align: center;
 }
 footer p {
 	text-align: center;
