@@ -3,7 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-.clearfix {
+.clearfix::after {
 	content: "";
 	display: block;
 	clear: both;
@@ -130,6 +130,7 @@ section p {
 	height: auto;
 	margin-bottom: 90px;
 	width: 320px;
+	text-align: center;
 }
 .content h3 {
 	text-align: center;
@@ -144,22 +145,6 @@ section p {
 }
 .content .feature-txt:nth-child(3n) {
 	padding-right: 0;
-}
-.fas {
-	position: absolute;
-}
-.fa-money-bill-wave {
-	top: 310px;
-	left: 130px;
-}
-.fa-child {
-	top: 310px;
-	left: 470px;
-	font-weight: solid;
-	}
-.fa-smoking {
-	top: 310px;
-	right: 140px;
 }
 .prof-box {
 	background-color: #ECEFF1;
@@ -203,12 +188,7 @@ section p {
 	width: 800px;
 	margin: 0 auto;
 	height: auto;
-	position: relative;
-}
-.contact .mee-item {
 	padding: 30px 0 90px;
-	width: 400px;
-	margin-left: 120px;
 }
 .contact p {
 	padding: 30px;
@@ -220,25 +200,23 @@ section p {
 .contact li {
 	float:left;
 }
-.fa-gift {
-	position: absolute;
-	bottom: 140px;
-	right: 147px;
+
+.mee-item{
+	width:800px;
 }
-.fa-twitter {
-	position: absolute;
-	bottom: 138px;
-	right: 70px;
+
+.mee{
+	width:400px;
+	float: left;
 }
-.fa-instagram {
-	position: absolute;
-	bottom: 138px;
-	right: 0;
+.sns_box{
+	width:400px;
+	float: left;
 }
-.contact-logo {
-	position: absolute;
-	bottom: 190px;
-	right: 160px;
+
+.mini_box{
+	width: 200px;
+	margin: 0 auto;
 }
 
 footer {
@@ -256,7 +234,7 @@ footer p {
 @media screen and (max-width:767px) {
 	.wrap {
 	overflow: hidden;
-}
+	}
 	section {
 		background-image: url(../img1-10/code.png);
 		width: 100%;
@@ -269,35 +247,40 @@ footer p {
 		height: 50px;
 		float: none;
 	}
+	h1 {
+		padding: 200px 0 0;
+	}
 	.header-box {
 		height: 50px;
 		width: 90%;
 	}
-	.ham {
-		box-sizing: border-box;
-		height: 100%;
-		padding: 10px 40px;
-		position: fixed;
-		right: -300px;
-		top: 0;
-		transition: transform 0.3s linear 0s;
-		width: 300px;
-		z-index: 1000;
+	.hm {
+		float: right;
+		width: 40px;
+		height: 40px;
+		margin-right: 5%;
+		border: 1px solid #FAFAFA;
+		margin-top: 5px;
+		margin-bottom: 5px;
 	}
-	.ham::befor {
-		background-color: white;
-		border-radius: 0 0 0 10px;
-		color: white;
-		content: "≡";
+	.list-bar:first-child {
+		margin-top: 10px;
+	}
+	.list-bar {
 		display: block;
-		font-size: 50px;
-		height: 50px;
-		line-height: 50px;
-		position: absolute;
-		right: 100%;
+		width: 25px;
+		height: 2px;
+		margin: 5px auto;
+		background-color: #FAFAFA;
+	}
+	.nav-list {
+		display:none;
+		float: none;
+		width: 100%;
+		line-height: 50%;
+		border-bottom: 1px solid gray;
 		text-align: center;
-		top: 0;
-		width: 50px;
+		background-color: black;
 	}
 	section h1 {
 		padding-top: 200px;
@@ -308,14 +291,14 @@ footer p {
 		padding-top: 10px;
 		font-size: 18px;
 	}
+	.port-item {
+		padding-bottom:90px;
+	}
 	.portfolio {
 		width: 90%;
 		color: #000000;
+		overflow: hidden;
 		height: auto;
-	}
-	.port-item {
-		/*padding-bottom: 90px;*/
-		height: 1180px;
 	}
 	.portfolio h2 {
 		font-size: 32px;
@@ -355,7 +338,6 @@ footer p {
 	.feature .content {
 		float:none;
 		margin: 0 auto;
-		display: block;
 		padding: 30px;
 	}
 	.feature h2 {
@@ -365,29 +347,51 @@ footer p {
 		padding:0 0 0 8px;
 		margin-top: 30px;
 	}
-	.fa-money-bill-wave {
-		top: 300px;
-		left: 320px;
-	}
-	.fa-child {
-		top: 680px;
-		left: 330px;
-		font-weight: solid;
-	}
-	.fa-smoking {
-		right: 310px;
-		top: 1050px;
-	}
 	.profile {
 		width: 90%;
-		overflow:hidden;
 		height: auto;
+		margin: 0 auto;
 	}
 	.prof-item {
 		text-align:center;
-		margin: 0 90px;
+		width: 100%;
 	}
 	.gentle {
 		margin:0 auto;
+	}
+	.profile h3 {
+		margin: 20px 0 5px;
+	}
+	.prof-box p{
+		padding-bottom :0;
+	}
+	.last-p {
+		margin-bottom: 90px;
+	}
+	.contact-box {
+		width: 100%;
+	/*	padding: 0.5%;*/
+		height: auto;
+	}
+	.contact-item {
+		width: 100%;
+	}
+	.mee-item {
+		margin: 0 auto;
+		text-align: center;
+		float:none;
+	}
+	.mee {
+		float: none;
+		text-align: center;
+	}
+	.contact {
+		width: 100%;
+		float:none;
+		text-align:center;
+	}
+	.sns_box {
+		float:none;
+		text-align: center;
 	}
 }
